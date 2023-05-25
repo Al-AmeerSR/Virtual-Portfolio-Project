@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="java" keywords="fullstack developer,java,springboot,remote,java developer,j2ee developer,best remote developer,backend developer,AL-Ameer S.R">
+    <title>AL-AMEER S.R</title>
+    <link  th:href="@{https://www.reshot.com/preview-assets/icons/YRFDPEQ9TB/growing-business-YRFDPEQ9TB.svg}" rel="icon">
+    <!-- font icons -->
+    <link th:href="@{/styles/cssandjs/themify-icons.css}" rel="stylesheet"/>
+    <!-- Bootstrap + Meyawo main styles -->
+	<link th:href="@{/styles/cssandjs/main.css}" rel="stylesheet"/>
+    <style>
+        @keyframes fade-in-out {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+
+        .fade-in-out {
+            animation: fade-in-out 5s infinite;
+        }
+        .sticky-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(135deg);
+  width: 12px;
+  height: 12px;
+  border-left: 2px solid #333;
+  border-bottom: 2px solid #333;
+}
+.star{
+color:blue;
+font-size: 200%;
+}
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20" >
+        <div class="container">
+            <a class="logo" href="#" >Al-Ameer S.R</a>         
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="#home">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#about">About</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#skills">Skills</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>          
+    </nav><!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title fade-in-out">
+                
+                <span class="up" id="top">Hi there,</span>
+                <span class="down">I am AL-AMEER S.R</span>
+            </h1><br>
+            <p class="header-subtitle">FULLSTACK DEVELOPER  </p> <br>
+            <span class="quote"><b>"If your business is not on the internet then your business will be out of business"</b></span>
+            <span id="about" ></span>           
+        </div>            
+    </header>    <!-- end of page header -->
+    <!-- about section -->
+    <section class="section pt-0" >
+        <!-- container -->
+        <div class="container text-center">
+            <!-- about wrapper -->
+            <div class="about" >
+                <div class="about-img-holder" >
+                    <img src="https://img.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg?w=900&t=st=1684774507~exp=1684775107~hmac=b35f44e956d54cf5f7e460f13c6dfc29ba10d0d6a86d9a0e456c0a9db6885625" class="about-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="about-caption">
+                    <p class="section-subtitle" >Who Am I ?</p>
+                    <h2 class="section-title mb-3">About Me</h2>
+                    <p id="typing-effect">
+                       <span class="star">✩</span>I am a full-stack Java developer with expertise in AngularJS,HTML, CSS, jQuery, &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspJavaScript,Bootstrap, Spring Boot,Node JS and MySQL, . <br><span class="star">✩</span>I hold a degree in Bachelor of Computer Applications (BCA).
+                        <br><span class="star">✩</span>I have gained practical experience during an 8-month internship in Java fullstack &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspdevelopment at Scope India in Trivandrum.
+                    </p>
+                    <button class="btn-rounded btn btn-outline-primary mt-4"><a href="https://drive.google.com/file/d/12T9UF_M6MFHMqgLihQbr1gSUwqAirVEr/view?usp=share_link" target="_blank">Download CV</a></button>
+                </div>              
+            </div><!-- end of about wrapper -->
+        </div><!-- end of container -->
+    </section> <!-- end of about section -->
+
+    <!-- skills section -->
+    <section class="section" id="skills">
+        <div class="container text-center">
+            <p class="section-subtitle">What I Do ?</p>
+            <h6 class="section-title mb-6">Skills</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img th:src="@{/images/responsive.svg}" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
+                            <h6 class="title">Front-End</h6>
+                            <p class="subtitle"><b>HTML,CSS,JAVASCRIPT JQuery,AngularJS,BOOTSTRAP</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img th:src="@{/images/toolbox.svg}" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
+                            <h6 class="title">Back-End</h6>
+                            <p class="subtitle"><b>SPRING BOOT,SPRING JAVA/J2EE,NODE JS,Express JS</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img th:src="@{/images/pencil-case.svg}" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
+                            <h6 class="title">Web Designing</h6>
+                            <p class="subtitle"><b>Figma,Adobe Photoshop,Canva </b> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img th:src="@{/images/analytics.svg}" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
+                            <h6 class="title">SEO</h6>
+                            <p class="subtitle"><b>On-Page SEO </b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end of row -->
+        </div>
+    </section><!-- end of service section -->
+
+    <!-- portfolio section -->
+    <section class="section" id="portfolio">
+        <div class="container text-center">
+            <p class="section-subtitle">What I Did ?</p>
+            <h6 class="section-title mb-6">Portfolio</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#portfolio" class="portfolio-card" >
+                        <img class="portfolio-card-img" src="https://img.freepik.com/free-photo/confident-teacher-explaining-lesson-pupils_74855-9751.jpg?w=740&t=st=1684742564~exp=1684743164~hmac=c19a5f036c1ed0167b93003729d2202b0a4ca5f87fc7947c3e3363646c6cc653"  alt="Educational Site">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Educational Institute Site</h5>
+                                <p class="font-weight-normal"></p>
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href=" #portfolio" class="portfolio-card" >
+                        <img class="portfolio-card-img" src="https://img.freepik.com/free-photo/designer-working-layout_53876-101277.jpg?w=740&t=st=1684743024~exp=1684743624~hmac=2f4bbeee77303a66e061a18be653ae8678577eed72b084dac5d314b0284b8a74"  alt="Virtual Portfolio">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Virtual Portfolio</h5>
+                                <p class="font-weight-normal"></p>
+                            </span>                         
+                        </span>                         
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#portfolio" class="portfolio-card" >
+                        <img class="portfolio-card-img" src="https://img.freepik.com/free-photo/young-handsome-physician-medical-robe-with-stethoscope_1303-17818.jpg?w=740&t=st=1684742458~exp=1684743058~hmac=bc6bd311b8ceacd8522a3ea2738dbcbc78d0df2e8a26aa4b81b26467fdce6eb3"  alt="Hospital Site">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Online Doctor Appointment Site</h5>
+                                <p class="font-weight-normal"></p>
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+            </div><!-- end of row -->
+        </div><!-- end of container -->
+    </section> <!-- end of portfolio section -->
+     
+    <!-- contact section -->
+    <section class="section" id="contact">
+        <div class="container text-center">
+            <p class="section-subtitle">How can you communicate?</p>
+            <h6 class="section-title mb-5">Contact Me</h6>
+            <!-- contact form -->
+    <form action="#" th:action="@{/sendEmail}" class="contact-form col-md-10 col-lg-8 m-auto" th:object="${contactForm}"   method="post">
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <input type="text" size="50" class="form-control" id="username" th:field="*{username}" placeholder="Your Name" required/>                 
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <input type="email" class="form-control"  id="email" th:field="*{email}" placeholder="Enter Email" requried/>                 
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <textarea name="comment" id="message" rows="6"   class="form-control" th:field="*{message}" placeholder="Write Something"></textarea>
+                    </div>
+                    <div class="form-group col-sm-12 mt-3">
+                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded"/>                  
+                    </div>
+                </div>  
+            </form><!-- end of contact form -->
+    
+            
+        </div><!-- end of container -->
+    </section><!-- end of contact section -->
+    <a href="#"><button class="sticky-button">
+         <span class="arrow"></span>
+      </button></a>
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer">       
+            
+            
+            
+            <div class="social-links text-center m-auto ml-sm-auto">
+                <a th:href="@{https://www.linkedin.com/in/al-ameer-s-r-78651a176/}" class="link" target="_blank"><i class="ti-linkedin"></i></a>
+                <a th:href="@{https://github.com/Al-AmeerSR}" class="link" target="_blank"><i class="ti-github"></i></a>
+                <a th:href="@{https://www.instagram.com/al_ameer_shajahan/}" class="link" target="_blank"><i class="ti-instagram"></i></a>
+            </div>
+        
+        </footer>
+    </div> <!-- end of page footer -->
+	
+	<!-- core  -->
+    <script th:src="@{/js/cssandjs/jquery-3.4.1.js}"></script>
+    <script th:src="@{/js/cssandjs/bootstrap.bundle.js}"></script>
+
+    <!-- bootstrap 3 affix -->
+	<script th:src="@{/js/cssandjs/bootstrap.affix.js}"></script>
+
+    <!-- Meyawo js -->
+    <script th:src="@{/js/cssandjs/script.js}"></script>
+
+</body>
+</html>
